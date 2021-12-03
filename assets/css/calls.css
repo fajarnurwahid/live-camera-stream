@@ -1,0 +1,71 @@
+#content main .call-wrapper {
+	padding: .5rem;
+	display: flex;
+	flex-direction: column;
+	grid-gap: .5rem;
+}
+#content main .call {
+	display: flex;
+	grid-gap: 1rem;
+	box-shadow: var(--shadow);
+	border-radius: 5px;
+	padding: 1rem;
+	color: var(--dark);
+	align-items: center;
+	position: relative;
+	left: 20px;
+	opacity: 0;
+	animation: fadeLeft .5s calc(var(--d) * .1s) ease forwards;
+}
+#content main .call:hover {
+	background: var(--grey-l);
+}
+#content main .call .icon-user {
+	font-size: 1.5rem;
+	color: var(--green);
+}
+#content main .call h3 {
+	color: var(--dark);
+	font-weight: 400;
+	font-size: 1rem;
+}
+#content main .call .num,
+#content main .call .time,
+#content main .call .date {
+	font-size: .875rem;
+	color: var(--grey-d);
+}
+#content main .call .right {
+	align-self: stretch;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+#content main .call .right .icon {
+	font-size: 1.5rem;
+}
+#content main .call .right .icon.up {
+	color: var(--green);
+	transform: rotateZ(-45deg);
+}
+#content main .call .right .icon.down {
+	color: var(--blue);
+	transform: rotateZ(135deg);
+}
+
+@keyframes fadeLeft {
+	0% {
+		left: 20px;
+		opacity: 0;
+	}
+	50% {
+		left: -20px;
+		opacity: 1;
+	}
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}

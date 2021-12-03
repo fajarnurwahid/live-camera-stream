@@ -1,0 +1,61 @@
+#content main .sms-wrapper {
+	padding: .5rem;
+	display: flex;
+	flex-direction: column;
+	grid-gap: .5rem;
+}
+#content main .sms {
+	box-shadow: var(--shadow);
+	border-radius: 5px;
+	padding: 1rem;
+	color: var(--dark);
+	position: relative;
+	left: 20px;
+	opacity: 0;
+	animation: fadeLeft .5s calc(var(--d) * .1s) ease forwards;
+}
+#content main .sms:hover {
+	background: var(--grey-l);
+}
+#content main .sms h3 {
+	color: var(--dark);
+	font-weight: 400;
+	font-size: 1rem;
+}
+#content main .sms .msg,
+#content main .sms .date {
+	font-size: .875rem;
+	color: var(--grey-d);
+}
+#content main .sms .top,
+#content main .sms .bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#content main .sms .bottom .icon {
+	font-size: 1.5rem;
+}
+#content main .sms .bottom .icon.up {
+	color: var(--green);
+	transform: rotateZ(-45deg);
+}
+#content main .sms .bottom .icon.down {
+	color: var(--blue);
+	transform: rotateZ(135deg);
+}
+
+@keyframes fadeLeft {
+	0% {
+		left: 20px;
+		opacity: 0;
+	}
+	50% {
+		left: -20px;
+		opacity: 1;
+	}
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}

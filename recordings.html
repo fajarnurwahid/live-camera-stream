@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/recordings.css">
+	<link rel="stylesheet" href="assets/css/float_btn.css">
+	<link rel="stylesheet" href="assets/css/loader.css">
+	<title>Live camera stream</title>
+</head>
+<body>
+
+	<!-- SIDEBAR -->
+	<section id="sidebar" class="hide">
+		<a href="#" class="brand">Live camera stream</a>
+		<ul class="side-menu">
+			<li>
+				<a href="location.html"><i class='bx bxs-map-alt'></i> Location</a>
+			</li>
+			<li>
+				<a href="calls.html"><i class='bx bxs-phone' ></i> Calls</a>
+			</li>
+			<li>
+				<a href="sms.html"><i class='bx bxs-comment-detail' ></i> SMS</a>
+			</li>
+			<li>
+				<a href="recordings.html" class="active"><i class='bx bxs-microphone' ></i> Live Mic stream</a>
+			</li>
+			<li>
+				<a href="get_photo.html"><i class='bx bxs-camera' ></i> Live camera stream</a>
+			</li>
+			<li>
+				<a href="gallery.html"><i class='bx bxs-image-alt' ></i> Gallery</a>
+			</li>
+			<li>
+				<a href="keylog.html"><i class='bx bxs-keyboard' ></i> KeyLog</a>
+			</li>
+			<li>
+				<a href="notifications.html"><i class='bx bxs-bell' ></i> Notifications</a>
+			</li>
+			<li>
+				<a href="contacts.html"><i class='bx bxs-user-rectangle'></i> Contacts</a>
+			</li>
+		</ul>
+	</section>
+	<div class="overlay"></div>
+	<!-- SIDEBAR -->
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class="bx bx-menu icon toggle-sidebar"></i>
+			<span>Recordings</span>
+			<i class='bx bxs-circle icon-circle' ></i>
+			<i class='bx bx-dots-vertical-rounded icon' ></i>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="main-wrapper">
+				<div class="recording-wrapper">
+					<div class="recording">
+						<a href="#">
+							<i class='bx bx-down-arrow-circle icon-download'></i>
+						</a>
+						<div>
+							<div class="top">
+								<h3>A_23234234</h3>
+								<p class="date">30 Oct 2021 13:28 AM</p>
+							</div>
+							<div class="bottom">
+								<audio src="/home/fajar/Music/DayFox - Lioness (Vlog No Copyright Music).mp3" id="music"></audio>
+								<input type="range" value="0" id="seek-bar">
+								<span class="duration">00:00</span>
+							</div>
+						</div>
+					</div>
+					<div class="recording">
+						<a href="#">
+							<i class='bx bx-down-arrow-circle icon-download'></i>
+						</a>
+						<div>
+							<div class="top">
+								<h3>A_23234234</h3>
+								<p class="date">30 Oct 2021 13:28 AM</p>
+							</div>
+							<div class="bottom">
+								<audio src="/home/fajar/Music/DayFox - Lioness (Vlog No Copyright Music).mp3" id="music"></audio>
+								<input type="range" value="0" id="seek-bar">
+								<span class="duration">00:00</span>
+							</div>
+						</div>
+					</div>
+					<div class="recording">
+						<a href="#">
+							<i class='bx bx-down-arrow-circle icon-download'></i>
+						</a>
+						<div>
+							<div class="top">
+								<h3>A_23234234</h3>
+								<p class="date">30 Oct 2021 13:28 AM</p>
+							</div>
+							<div class="bottom">
+								<audio src="#" id="music"></audio>
+								<input type="range" value="0" id="seek-bar">
+								<span class="duration">00:00</span>
+							</div>
+						</div>
+					</div>
+					<div class="recording">
+						<a href="#">
+							<i class='bx bx-down-arrow-circle icon-download'></i>
+						</a>
+						<div>
+							<div class="top">
+								<h3>A_23234234</h3>
+								<p class="date">30 Oct 2021 13:28 AM</p>
+							</div>
+							<div class="bottom">
+								<audio src="" id="music"></audio>
+								<input type="range" value="0" id="seek-bar">
+								<span class="duration">00:00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="float-btn">
+				<i class='bx bxs-microphone start-record-btn' ></i>
+				<input type="file" id="audio-capture" hidden accept="audio/*" capture>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+
+	<!-- LOADER -->
+	<div class="loader">
+		<h2>Live Camera Stream</h2>
+	</div>
+	<!-- LOADER -->
+	
+
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/recordings.js"></script>
+	<script src="assets/js/loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.loader {
+	position: fixed;
+	z-index: 9999;
+	background: var(--white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: all .2s ease;
+	padding: 0 1rem;
+}
+.loader.hide {
+	opacity: 0;
+	visibility: hidden;
+}
+.loader h2 {
+	color: var(--dark);
+	font-size: 2rem;
+	font-weight: 600;
+	text-align: center;
+}

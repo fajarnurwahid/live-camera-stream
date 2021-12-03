@@ -1,0 +1,53 @@
+#content nav .icon-circle {
+	color: var(--green);
+}
+
+#content main .keylog-wrapper {
+	padding: .5rem;
+	display: flex;
+	flex-direction: column;
+	grid-gap: .5rem;
+}
+#content main .keylog {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: var(--shadow);
+	border-radius: 5px;
+	padding: 1rem;
+	color: var(--dark);
+	position: relative;
+	left: 20px;
+	opacity: 0;
+	animation: fadeLeft .5s calc(var(--d) * .1s) ease forwards;
+	font-style: italic;
+}
+#content main .keylog .img-app {
+	width: 2rem;
+}
+#content main .keylog:hover {
+	background: var(--grey-l);
+}
+#content main .keylog h3 {
+	color: var(--dark);
+	font-weight: 400;
+	font-size: 1rem;
+}
+#content main .keylog p {
+	font-size: .875rem;
+}
+
+@keyframes fadeLeft {
+	0% {
+		left: 20px;
+		opacity: 0;
+	}
+	50% {
+		left: -20px;
+		opacity: 1;
+	}
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}

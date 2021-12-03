@@ -1,0 +1,56 @@
+#content nav .icon-circle {
+	color: var(--green);
+}
+
+#content main .photo-wrapper {
+	padding: .5rem;
+	display: flex;
+	flex-direction: column;
+	grid-gap: .5rem;
+}
+#content main .photo {
+	display: flex;
+	align-items: center;
+	box-shadow: var(--shadow);
+	border-radius: 5px;
+	padding: 1rem;
+	color: var(--dark);
+	position: relative;
+	left: 20px;
+	opacity: 0;
+	grid-gap: 1rem;
+	animation: fadeLeft .5s calc(var(--d) * .1s) ease forwards;
+}
+#content main .photo:hover {
+	background: var(--grey-l);
+}
+#content main .photo h3 {
+	color: var(--dark);
+	font-weight: 400;
+	font-size: 1rem;
+}
+#content main .photo .date {
+	font-size: .875rem;
+	color: var(--grey-d);
+}
+#content main .photo img {
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	object-fit: cover;
+}
+
+@keyframes fadeLeft {
+	0% {
+		left: 20px;
+		opacity: 0;
+	}
+	50% {
+		left: -20px;
+		opacity: 1;
+	}
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}
