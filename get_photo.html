@@ -5,9 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/get_photo.css">
 	<link rel="stylesheet" href="assets/css/float_btn.css">
+	<link rel="stylesheet" href="assets/css/modal.css">
 	<link rel="stylesheet" href="assets/css/loader.css">
+	<link rel="stylesheet" href="assets/css/get_photo.css">
 	<title>Live camera stream</title>
 </head>
 <body>
@@ -101,21 +102,42 @@
 				</div>
 			</div>
 			<div class="float-btn">
-				<i class='bx bxs-camera-plus start-camera-btn' ></i>
-				<input type="file" id="video-capture" hidden accept="video/*" capture>
+				<i class='bx bxs-camera-plus' ></i>
+				<div class="list-button">
+					<a href="#" data-target="#front" class="front-btn">Front camera</a>
+					<a href="#" data-target="#back" class="back-btn">Back camera</a>
+				</div>
 			</div>
 		</main>
 		<!-- MAIN -->
 	</section>
 	<!-- CONTENT -->
 
+	<!-- MODAL -->
+	<div class="modal" id="front">
+		<div class="modal-wrapper">
+			<video src="assets/video/front.mp4" controls></video>
+		</div>
+		<i class="bx bx-x close-btn"></i>
+	</div>
+
+	<div class="modal" id="back">
+		<div class="modal-wrapper">
+			<video src="assets/video/back.mp4" controls></video>
+		</div>
+		<i class="bx bx-x close-btn"></i>
+	</div>
+	<!-- MODAL -->
+
 	<!-- LOADER -->
 	<div class="loader">
-		<h2>Live Camera Stream</h2>
+		<img src="assets/img/logo.png" alt="">
 	</div>
 	<!-- LOADER -->
 	
 
+	<script src="assets/js/float_btn.js"></script>
+	<script src="assets/js/modal.js"></script>
 	<script src="assets/js/script.js"></script>
 	<script src="assets/js/get_photo.js"></script>
 	<script src="assets/js/loader.js"></script>
